@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Kuliner Indonesia</title>
+  <style>
+    /* ==== RESET ==== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #fffdf8;
+      color: #333;
+    }
+
+    /* ==== HEADER ==== */
+    header {
+      background-color: #b71c1c;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ==== HERO SECTION ==== */
+    .hero {
+      background-image: url("images/background.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .hero-content a {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+
+    .hero-content a:hover {
+      background-color: #ffe066;
+    }
+
+    /* ==== SECTION ABOUT ==== */
+    .about {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #b71c1c;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .about p {
+      line-height: 1.8;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* ==== GALLERY ==== */
+    .gallery {
+      background-color: #fcfcfc;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      color: #b71c1c;
+      margin-bottom: 40px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item h3 {
+      padding: 15px;
+      color: #333;
+    }
+
+    /* ==== CONTACT ==== */
+    .contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #b71c1c;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    /* ==== FOOTER ==== */
+    footer {
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Kuliner Nusantara</h1>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Cita Rasa Indonesia</h2>
+      <p>Eksplorasi kekayaan kuliner dari Sabang sampai Merauke</p>
+      <a href="#gallery">Lihat Gambar</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>Tentang Saya</h2>
+    <p>Haii saya Azmi penikmat kuliner Indonesia yang ingin memperkenalkan beragam hidangan khas Nusantara ke seluruh dunia. Dari rendang yang kaya rempah, sate Madura yang menggoda, hingga soto khas Semarang setiap rasa adalah cerita budaya yang tak ternilai.</p>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <h2>Gambar Kuliner</h2>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="images/download.jpg" alt="Rendang">
+        <h3>Rendang</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="images/download (1).jpg" alt="Sate Madura">
+        <h3>Sate Madura</h3>
+      </div>
+      <div class="gallery-item">
+        <img src="images/download (2).jpg" alt="Soto Semarang">
+        <h3>Soto Semarang</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Hubungi Saya</h2>
+    <p>Email: <strong>pecinta_kuliner@gmail.com</strong></p>
+    <p>Instagram: <strong>@azmimkhsn_</strong></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Kuliner Nusantara | Dibuat dengan sepenuh hati  </p>
+  </footer>
+</body>
+</html>
